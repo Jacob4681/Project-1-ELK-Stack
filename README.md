@@ -31,12 +31,12 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function | IP Address | Operating System | Operating System |
+| Name     | Function |Private IP Address |Public IP Address| Operating System |
 |----------|----------|------------|------------------|------------------|
-|Jump Box Provisioner| Gateway  | 10.0.0.1   | Linux            | Linux            |
-|Web-1|Application Server|            |                  |                  |
-|Web-2|Application Server|            |                  |                  |
-|ELK-Stack|ELK Stack|            |                  |                  |
+|Jump Box Provisioner| Gateway  | 10.0.1.4   |    52.186.142.93      | Ubuntu LTS 18.04 |
+|Web-1|Application Server|  10.0.1.5  |    20.85.212.13      |   Ubuntu LTS 18.04  |
+|Web-2|Application Server|  10.0.1.6  |    20.85.212.13      |  Ubuntu LTS 18.04  |
+|ELK-Stack|ELK Stack| 10.1.0.4 |   23.101.195.170     |   Ubuntu LTS 18.04   |
 
 ### Access Policies
 
@@ -52,10 +52,10 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-|Jump Box Provisioner|Yes| 10.0.0.1 10.0.0.2    |
-|ELK-Stack|Yes|                      |
-|Web-1|                     |                      |
-|Web-2|                     |                      |
+|Jump Box Provisioner|Yes| My Home IP Address |
+|ELK-Stack|Yes| My Home IP Address  |
+|Web-1| No | My Home IP Address |
+|Web-2| No | My Home IP Address |
 
 ### Elk Configuration
 
