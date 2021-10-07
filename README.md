@@ -4,7 +4,7 @@ The files in this repository were used to configure the network depicted below.
 
 ![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Diagrams/Network%20Diagram.drawio.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Ansible file may be used to install only certain pieces of it, such as Filebeat.
 
   - [DVWA Webserver Playbook](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Ansible/DVWAwebserverplaybook.yml.txt)
   - [ELK Stack Playbook](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Ansible/ELKplaybook.yml.txt)
