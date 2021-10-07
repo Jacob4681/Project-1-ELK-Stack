@@ -57,8 +57,8 @@ A summary of the access policies in place can be found in the table below.
 |----------|---------------------|----------------------|
 |Jump Box Provisioner|Yes| My Home IP Address |
 |ELK-Stack|Yes| My Home IP Address  |
-|Web-1| No | My Home IP Address |
-|Web-2| No | My Home IP Address |
+|Web-1| No | 10.0.1.4 |
+|Web-2| No | 10.0.1.4 |
 
 ### Elk Configuration
 
