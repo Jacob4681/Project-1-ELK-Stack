@@ -73,7 +73,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/docker-ps.png)
+![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Dockerps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -92,14 +92,14 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the Elkplaybook.yml file to /etc/ansible/roles.
+- Copy the ELKplaybook.yml file to /etc/ansible/roles.
 - Update the /etc/ansible/hosts file to include the ELK stack VM IP Address
 - Run the playbook, and navigate to http://23.101.195.170:5601/app/kibana to check that the installation worked as expected.
 
 ### Using Filebeat and Metricbeat
 
 ### Filebeat
-- Edit /etc/ansible/filebeat-config.yml in the ansible container to include the ELK Stack IP
+- Edit /etc/ansible/roles/filebeat-config.yml in the ansible container to include the ELK Stack IP
 
 ![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Filebeat%20ElasticSearch%20Output.png)
 ![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Filebeat%20Setup%20Kibana.png)
@@ -108,7 +108,7 @@ SSH into the control node and follow the steps below:
   - $ ansible-playbook /etc/ansible/roles/Filebeat-playbook.yml
 
 ### Metricbeat
-- Edit /etc/ansible/metricbeat-config.yml in the ansible container to include the ELK Stack IP
+- Edit /etc/ansible/roles/metricbeat-config.yml in the ansible container to include the ELK Stack IP
 
 ![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Metricbeat%20Elasticsearch%20Output.png)
 ![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Metricbeat%20Setup%20Kibana.png)
