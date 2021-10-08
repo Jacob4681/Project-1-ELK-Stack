@@ -101,7 +101,8 @@ SSH into the control node and follow the steps below:
 ### Filebeat
 - Edit /etc/ansible/filebeat-config.yml in the ansible container to include the ELK Stack IP
 
-![]()
+![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Filebeat%20ElasticSearch%20Output.png)
+![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Filebeat%20Setup%20Kibana.png)
 
 - After editing the filebeat configurations file, run the playbook using this command
   - $ ansible-playbook /etc/ansible/roles/Filebeat-playbook.yml
@@ -109,7 +110,8 @@ SSH into the control node and follow the steps below:
 ### Metricbeat
 - Edit /etc/ansible/metricbeat-config.yml in the ansible container to include the ELK Stack IP
 
-![]()
+![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Metricbeat%20Elasticsearch%20Output.png)
+![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Metricbeat%20Setup%20Kibana.png)
 
 - After editing the metricbeat configurations file, run the playbook using this command
   - $ ansible-playbook /etc/ansible/roles/Metricbeat-playbook.yml
