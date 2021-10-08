@@ -45,7 +45,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the Jump Box Provisioner and ELK Stack machines can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the Jump Box Provisioner and ELK Stack machines can accept connections from the Internet. Access to these machines is only allowed from the following IP addresses:
 - My Home IP Address
 
 Machines within the network can only be accessed by the Jump Box Provisioner.
