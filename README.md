@@ -8,7 +8,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
   - [DVWA Webserver Playbook](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Ansible/DVWAwebserverplaybook.yml.txt)
   - [ELK Stack Playbook](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Ansible/ELKplaybook.yml.txt)
-  - [Filebeat Playbook](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Ansible/Filebeat-playbook.cfg.txt)
+  - [Filebeat Playbook](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Ansible/Filebeat-playbook.yml.txt)
   - [Metricbeat Playbook](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Ansible/Metricbeat-playbook.yml.txt)
 
 This document contains the following details:
