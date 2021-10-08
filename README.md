@@ -73,7 +73,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Dockerps.png)
+![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Images/Dockerps.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -94,15 +94,21 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the ELKplaybook.yml file to /etc/ansible/roles.
 - Update the /etc/ansible/hosts file to include the ELK stack VM IP Address
+  - Example configurtion of /etc/ansible/hosts
+
+![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Images/hosts-file.png)
+
 - Run the playbook, and navigate to http://23.101.195.170:5601/app/kibana to check that the installation worked as expected.
+
+![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Images/Kibana.png)
 
 ### Using Filebeat and Metricbeat
 
 ### Filebeat
 - Edit /etc/ansible/roles/filebeat-config.yml in the ansible container to include the ELK Stack IP
 
-![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Filebeat%20ElasticSearch%20Output.png)
-![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Filebeat%20Setup%20Kibana.png)
+![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Images/Filebeat%20ElasticSearch%20Output.png)
+![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Images/Filebeat%20Setup%20Kibana.png)
 
 - After editing the filebeat configurations file, run the playbook using this command
   - $ ansible-playbook /etc/ansible/roles/Filebeat-playbook.yml
@@ -110,8 +116,8 @@ SSH into the control node and follow the steps below:
 ### Metricbeat
 - Edit /etc/ansible/roles/metricbeat-config.yml in the ansible container to include the ELK Stack IP
 
-![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Metricbeat%20Elasticsearch%20Output.png)
-![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Metricbeat%20Setup%20Kibana.png)
+![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Images/Metricbeat%20Elasticsearch%20Output.png)
+![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Images/Metricbeat%20Setup%20Kibana.png)
 
 - After editing the metricbeat configurations file, run the playbook using this command
   - $ ansible-playbook /etc/ansible/roles/Metricbeat-playbook.yml
