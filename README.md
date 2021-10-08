@@ -8,7 +8,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
   - [DVWA Webserver Playbook](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Ansible/DVWAwebserverplaybook.yml.txt)
   - [ELK Stack Playbook](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Ansible/ELKplaybook.yml.txt)
-  - [Filebeat Playbook](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Ansible/Filebeat-playbook.cfg.txt)
+  - [Filebeat Playbook](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Ansible/Filebeat-playbook.yml.txt)
   - [Metricbeat Playbook](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Ansible/Metricbeat-playbook.yml.txt)
 
 This document contains the following details:
@@ -96,4 +96,22 @@ SSH into the control node and follow the steps below:
 - Update the /etc/ansible/hosts file to include the ELK stack VM IP Address
 - Run the playbook, and navigate to http://23.101.195.170:5601/app/kibana to check that the installation worked as expected.
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._ 
+### Using Filebeat and Metricbeat
+
+### Filebeat
+- Edit /etc/ansible/filebeat-config.yml in the ansible container to include the ELK Stack IP
+
+![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Filebeat%20ElasticSearch%20Output.png)
+![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Filebeat%20Setup%20Kibana.png)
+
+- After editing the filebeat configurations file, run the playbook using this command
+  - $ ansible-playbook /etc/ansible/roles/Filebeat-playbook.yml
+
+### Metricbeat
+- Edit /etc/ansible/metricbeat-config.yml in the ansible container to include the ELK Stack IP
+
+![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Metricbeat%20Elasticsearch%20Output.png)
+![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Metricbeat%20Setup%20Kibana.png)
+
+- After editing the metricbeat configurations file, run the playbook using this command
+  - $ ansible-playbook /etc/ansible/roles/Metricbeat-playbook.yml
