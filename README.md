@@ -49,7 +49,7 @@ Only the Jump Box Provisioner and ELK Stack machines can accept connections from
 - My Home IP Address
 
 Machines within the network can only be accessed by the Jump Box Provisioner.
-- The only machine that is allowed to acces the ELK-VM is the Jump Box Provisioner. It's IP Adress is 52.186.142.93
+- The only machine that is allowed to acces the ELK-VM is the Jump Box Provisioner. It's IP Address is 52.186.142.93
 
 A summary of the access policies in place can be found in the table below.
 
