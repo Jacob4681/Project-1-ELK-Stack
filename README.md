@@ -104,7 +104,7 @@ SSH into the control node and follow the steps below:
 
 ![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Images/Kibana.png)
 
-### Using Filebeat and Metricbeat
+### How to use Filebeat and Metricbeat
 
 ### Filebeat
 - Edit /etc/ansible/roles/filebeat-config.yml in the ansible container to include the ELK Stack IP
