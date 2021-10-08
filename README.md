@@ -85,7 +85,7 @@ We have installed the following Beats on these machines:
 - Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- Filebeat centralizes and forwards system logs from the Web VMs to the ELK Stack.
+- Filebeat centralizes and forwards system logs from the Web VMs to the ELK Stack in an easy to read format.
 - Metricbeat records metric data of the Web VMs to the ELK VM.
 
 ### Using the Playbook
