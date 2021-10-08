@@ -98,7 +98,9 @@ SSH into the control node and follow the steps below:
 
 ![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Images/hosts-file.png)
 
-- Run the playbook, and navigate to http://23.101.195.170:5601/app/kibana to check that the installation worked as expected.
+- Run the playbook using this command
+  - $ ansible-playbook ELKplaybook.yml
+- Then navigate to http://23.101.195.170:5601/app/kibana to check that the installation worked as expected.
 
 ![](https://github.com/Jacob4681/Project-1-ELK-Stack/blob/main/Images/Kibana.png)
 
